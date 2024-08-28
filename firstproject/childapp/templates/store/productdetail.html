@@ -1,0 +1,33 @@
+{% extends "store/main.html" %}
+
+
+
+{% block title %} 
+<title> Deatails file</title>
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1>This is my second app product detail page </h1>
+<div class="container-fluid ">
+  
+
+
+
+   
+    <img src="{{detail.image.url}}" alt="" width='200px'>
+    <h3>{{detail.title}}</h3>
+    <h3 class="text-danger">{{detail.price}}</h3>
+    <h3>{{detail.productsize}}</h3>
+    <p>{{detail.description}}</p>
+    {% comment %} <button class="btn-dark"><a href="{% url 'detailpage' sample.id %}">Buy now</a></button> {% endcomment %}
+
+
+
+
+
+
+</div>
+{% endblock %}
